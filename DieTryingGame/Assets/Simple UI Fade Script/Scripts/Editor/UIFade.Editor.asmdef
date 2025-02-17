@@ -1,0 +1,17 @@
+{
+    "name": "UIFade.Editor",
+    "references": [
+        "GUID:540d6e61f41ecd34f88918f78162cd9d"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
