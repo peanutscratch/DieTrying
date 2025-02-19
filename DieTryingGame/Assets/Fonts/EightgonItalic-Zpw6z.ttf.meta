@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: a2b37146b54a04047bbaa9914d58c52e
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Eightgon
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 11c1d9ab87b200a4e93503a18ef91e21, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
