@@ -168,7 +168,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 61165c170c0b97c48a9bf5be5ee0f5b6, type: 3}
+    m_Font: {fileID: 12800000, guid: 7015f2d2ce595844e9fe6e0c3bd8d27b, type: 3}
     m_FontSize: 300
     m_FontStyle: 0
     m_BestFit: 0
@@ -177,7 +177,7 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 1
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: A
@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 114767332097364426}
   - component: {fileID: 95211596249801962}
   m_Layer: 0
-  m_Name: ButtonPrompt
+  m_Name: SpaceButtonPrompt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
