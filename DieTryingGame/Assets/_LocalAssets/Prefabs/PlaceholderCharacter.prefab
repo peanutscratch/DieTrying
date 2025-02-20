@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 114654745524214770}
   - component: {fileID: 114704504716019314}
   m_Layer: 10
-  m_Name: MinimalCharacter2D
+  m_Name: PlaceholderCharacter
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,7 +99,8 @@ MonoBehaviour:
   UseDefaultMecanim: 1
   RunAnimatorSanityChecks: 0
   DisableAnimatorLogs: 1
-  CharacterModel: {fileID: 1997364199477008}
+  CharacterModel: {fileID: 1790328835693532, guid: 1ad7bd0ba7df62842842d1a8d738ba6a,
+    type: 3}
   CharacterHealth: {fileID: 0}
   SendStateChangeEvents: 1
   AdditionalAbilityNodes: []
@@ -128,7 +129,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
