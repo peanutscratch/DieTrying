@@ -615,7 +615,7 @@ PrefabInstance:
     - target: {fileID: 2951015709476750123, guid: 66a15f1247480c644820d14911a5eec5,
         type: 3}
       propertyPath: managedReferences[5390912587188666383].Active
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2951015709476750123, guid: 66a15f1247480c644820d14911a5eec5,
         type: 3}
@@ -1380,7 +1380,7 @@ PrefabInstance:
     - target: {fileID: 2951015709476750123, guid: 66a15f1247480c644820d14911a5eec5,
         type: 3}
       propertyPath: managedReferences[5390912587188666382].RemapCurveOne
-      value: 1.2
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 2951015709476750123, guid: 66a15f1247480c644820d14911a5eec5,
         type: 3}
