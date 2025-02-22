@@ -5,9 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public OptionsMenu OPTIONS_MENU;
+    public void Start()
+    {
+        OPTIONS_MENU.GetComponent<Animator>().Play("Inactive");
+    }
+    
     public void PlayGame()
     {
-        SceneManager.LoadScene(1); //loads scene "PlayerTest"
+        SceneManager.LoadScene("TDE_Test"); //loads scene "PlayerTest"
     }
     
     public void QuitGame()
