@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 210605697109731884}
   - component: {fileID: 61063304230422582}
   - component: {fileID: 114186989754477336}
+  - component: {fileID: 2725694389900574980}
   - component: {fileID: 114419516946932276}
   - component: {fileID: 114646620809325970}
   - component: {fileID: 114583920634094340}
@@ -53,9 +54,11 @@ GameObject:
   - component: {fileID: 114547587046617724}
   - component: {fileID: 114042670615466288}
   - component: {fileID: 114450207927170996}
-  - component: {fileID: 114871673569860628}
   - component: {fileID: 114654745524214770}
   - component: {fileID: 114704504716019314}
+  - component: {fileID: 1735628759589514915}
+  - component: {fileID: 7818076643980903327}
+  - component: {fileID: 2233348561440541114}
   m_Layer: 10
   m_Name: PlaceholderCharacter
   m_TagString: Player
@@ -101,7 +104,7 @@ MonoBehaviour:
   DisableAnimatorLogs: 1
   CharacterModel: {fileID: 1790328835693532, guid: 1ad7bd0ba7df62842842d1a8d738ba6a,
     type: 3}
-  CharacterHealth: {fileID: 0}
+  CharacterHealth: {fileID: 2725694389900574980}
   SendStateChangeEvents: 1
   AdditionalAbilityNodes: []
   CharacterBrain: {fileID: 0}
@@ -143,7 +146,7 @@ SortingGroup:
   m_Enabled: 1
   m_SortingLayerID: 47421343
   m_SortingLayer: 4
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_SortAtRoot: 0
 --- !u!61 &61063304230422582
 BoxCollider2D:
@@ -177,7 +180,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.25}
+  m_Offset: {x: -0.038589478, y: -0.0374012}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -188,7 +191,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6, y: 0.5}
+  m_Size: {x: 0.47772217, y: 0.630703}
   m_EdgeRadius: 0
 --- !u!114 &114186989754477336
 MonoBehaviour:
@@ -227,6 +230,51 @@ MonoBehaviour:
   ObstaclesLayerMask:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &2725694389900574980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790328835693532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01754710d9f92ec4d9a21b81f5682667, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Model: {fileID: 1997364199477008}
+  CurrentHealth: 0
+  Invulnerable: 0
+  InitialHealth: 1
+  MaximumHealth: 1
+  ResetHealthOnEnable: 1
+  ImmuneToDamage: 0
+  DamageMMFeedbacks: {fileID: 0}
+  FeedbackIsProportionalToDamage: 0
+  PreventTakeSelfDamage: 0
+  ImmuneToKnockback: 0
+  ImmuneToKnockbackIfZeroDamage: 0
+  KnockbackForceMultiplier: 1
+  DestroyOnDeath: 1
+  DelayBeforeDestruction: 1
+  PointsWhenDestroyed: 0
+  RespawnAtInitialLocation: 0
+  DisableControllerOnDeath: 1
+  DisableModelOnDeath: 1
+  DisableCollisionsOnDeath: 1
+  DisableChildCollisionsOnDeath: 0
+  ChangeLayerOnDeath: 0
+  ChangeLayersRecursivelyOnDeath: 0
+  LayerOnDeath:
+    _layerIndex: 0
+  DeathMMFeedbacks: {fileID: 0}
+  ResetColorOnRevive: 1
+  ColorMaterialPropertyName: _Color
+  UseMaterialPropertyBlocks: 1
+  MasterHealth: {fileID: 0}
+  TargetDamageResistanceProcessor: {fileID: 0}
+  TargetAnimator: {fileID: 0}
+  DisableAnimatorLogs: 1
 --- !u!114 &114419516946932276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -494,51 +542,6 @@ MonoBehaviour:
     CanInterruptRefill: 1
     CooldownState: 0
     CurrentDurationLeft: 0
---- !u!114 &114871673569860628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01754710d9f92ec4d9a21b81f5682667, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Model: {fileID: 0}
-  CurrentHealth: 100
-  Invulnerable: 0
-  InitialHealth: 100
-  MaximumHealth: 100
-  ResetHealthOnEnable: 1
-  ImmuneToDamage: 0
-  DamageMMFeedbacks: {fileID: 0}
-  FeedbackIsProportionalToDamage: 0
-  PreventTakeSelfDamage: 0
-  ImmuneToKnockback: 0
-  ImmuneToKnockbackIfZeroDamage: 0
-  KnockbackForceMultiplier: 1
-  DestroyOnDeath: 1
-  DelayBeforeDestruction: 0
-  PointsWhenDestroyed: 0
-  RespawnAtInitialLocation: 0
-  DisableControllerOnDeath: 1
-  DisableModelOnDeath: 1
-  DisableCollisionsOnDeath: 1
-  DisableChildCollisionsOnDeath: 0
-  ChangeLayerOnDeath: 0
-  ChangeLayersRecursivelyOnDeath: 0
-  LayerOnDeath:
-    _layerIndex: 0
-  DeathMMFeedbacks: {fileID: 0}
-  ResetColorOnRevive: 1
-  ColorMaterialPropertyName: _Color
-  UseMaterialPropertyBlocks: 0
-  MasterHealth: {fileID: 0}
-  TargetDamageResistanceProcessor: {fileID: 0}
-  TargetAnimator: {fileID: 0}
-  DisableAnimatorLogs: 1
 --- !u!114 &114654745524214770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -613,6 +616,61 @@ MonoBehaviour:
   AutoEquipOnlyIfEquipmentInventoryIsEmpty: 0
   AutoEquipOnRespawn: 1
   CharacterHandleWeapon: {fileID: 0}
+--- !u!114 &1735628759589514915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790328835693532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8c17a9a9fed854daff1f08f315ad69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartSfx: {fileID: 0}
+  AbilityInProgressSfx: {fileID: 0}
+  AbilityStopSfx: {fileID: 0}
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  BlockingWeaponStates: 
+  FallingFeedback: {fileID: 0}
+--- !u!114 &7818076643980903327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790328835693532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f5f1d82c232174ba106ae18a8aa4cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawningBodyFeedback: {fileID: 0}
+  deadBodyManager: {fileID: 2233348561440541114}
+  ObjectsToSpawnOnDeath:
+  - {fileID: 722453248576642795, guid: eb808db664294034abaf8cc631c513d3, type: 3}
+  ObjectsToDisableOnDeath: []
+  MonosToDisableOnDeath: []
+  SpawnBodyButton: 0
+--- !u!114 &2233348561440541114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790328835693532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db8b586626b59647a0e82664fcebdf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deadBodies: []
+  bodyCountCap: 3
 --- !u!1 &1997364199477008
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,7 +697,7 @@ Transform:
   m_GameObject: {fileID: 1997364199477008}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.52, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -686,7 +744,7 @@ SpriteRenderer:
   m_SortingLayerID: 47421343
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: eeb68d44a260e964584c4310ad5add3a, type: 3}
+  m_Sprite: {fileID: 1164423757, guid: 307edf957f9713f468ff69c3946b6f91, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

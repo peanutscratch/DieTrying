@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 1603220759
   m_SortingLayer: 3
   m_SortingOrder: 8
-  m_Sprite: {fileID: 1146098191, guid: d7094a19b01b1de4e94624ee6ae253cd, type: 3}
+  m_Sprite: {fileID: 3356287, guid: 307edf957f9713f468ff69c3946b6f91, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ButtonActivatedRequirement: 2
   RequiresPlayerType: 1
-  RequiresButtonActivationAbility: 1
+  RequiresButtonActivationAbility: 0
   Activable: 1
   AutoActivation: 0
   AutoActivationDelay: 0
@@ -220,7 +220,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   OnlyAffectsPlayer: 1
-  ExitOffset: {x: 0, y: -0.5, z: 0}
+  ExitOffset: {x: 0, y: 0, z: 0}
   TeleportationMode: 0
   TweenCurve: 4
   MaintainXEntryPositionOnExit: 0

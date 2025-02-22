@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 1603220759
   m_SortingLayer: 3
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 4008a82543ff9fd4ca0ef39a6746b2b2, type: 3}
+  m_Sprite: {fileID: -1523516264, guid: 307edf957f9713f468ff69c3946b6f91, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -95,7 +95,7 @@ Animator:
   m_GameObject: {fileID: 543008496019804775}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5fa32075a8331c749ad2fd1f25839989, type: 2}
+  m_Controller: {fileID: 9100000, guid: ec2f10a03d3eda14fbc2102e11f1e8be, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -133,7 +133,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6287064980998848892}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.487759, y: -1.4840536, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -199,13 +199,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SwitchAnimator: {fileID: 265626990664087350}
-  InitialState: 1
+  InitialState: 0
   SwitchOn:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MoreMountains.TopDownEngine.ButtonActivated, MoreMountains.TopDownEngine
-        m_MethodName: MakeActivable
+        m_MethodName: MakeUnactivable
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -220,7 +220,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MoreMountains.TopDownEngine.ButtonActivated, MoreMountains.TopDownEngine
-        m_MethodName: MakeUnactivable
+        m_MethodName: MakeActivable
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -252,10 +252,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonActivatedRequirement: 2
-  RequiresPlayerType: 1
-  RequiresButtonActivationAbility: 1
+  RequiresPlayerType: 0
+  RequiresButtonActivationAbility: 0
   Activable: 1
-  AutoActivation: 0
+  AutoActivation: 1
   AutoActivationDelay: 0
   AutoActivationDelayResetsOnExit: 1
   CanOnlyActivateIfGrounded: 0
@@ -288,21 +288,10 @@ MonoBehaviour:
   ExitFeedback: {fileID: 0}
   OnActivation:
     m_PersistentCalls:
-      m_Calls: []
-  OnExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStay:
-    m_PersistentCalls:
-      m_Calls: []
-  RequiresKey: 0
-  KeyID: 
-  KeyAction:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 9026492122448445547}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ToggleSwitch
+        m_TargetAssemblyTypeName: MoreMountains.TopDownEngine.Switch, MoreMountains.TopDownEngine
+        m_MethodName: TurnSwitchOff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -312,3 +301,26 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnExit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9026492122448445547}
+        m_TargetAssemblyTypeName: MoreMountains.TopDownEngine.Switch, MoreMountains.TopDownEngine
+        m_MethodName: TurnSwitchOn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnStay:
+    m_PersistentCalls:
+      m_Calls: []
+  RequiresKey: 0
+  KeyID: 
+  KeyAction:
+    m_PersistentCalls:
+      m_Calls: []

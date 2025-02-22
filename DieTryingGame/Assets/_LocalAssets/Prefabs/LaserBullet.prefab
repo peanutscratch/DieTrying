@@ -5062,7 +5062,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TargetLayerMask:
     serializedVersion: 2
-    m_Bits: 9216
+    m_Bits: 1024
   Owner: {fileID: 0}
   TriggerFilter: 195
   MinDamageCaused: 10
@@ -5112,7 +5112,7 @@ MonoBehaviour:
   Mode: 0
   ObstaclesLayerMask:
     serializedVersion: 2
-    m_Bits: 1280
+    m_Bits: 1344
   SkinWidth: 0.1
   RepositionRigidbodyIfHitTrigger: 1
   RepositionRigidbodyIfHitNonTrigger: 1
@@ -10499,7 +10499,7 @@ SpriteRenderer:
   m_SortingLayerID: 47421343
   m_SortingLayer: 4
   m_SortingOrder: -1
-  m_Sprite: {fileID: 9109532, guid: d7094a19b01b1de4e94624ee6ae253cd, type: 3}
+  m_Sprite: {fileID: -678851491, guid: 307edf957f9713f468ff69c3946b6f91, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
