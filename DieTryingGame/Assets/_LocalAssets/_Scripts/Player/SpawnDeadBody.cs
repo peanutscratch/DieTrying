@@ -40,7 +40,6 @@ namespace MoreMountains.TopDownEngine
 		[MMInspectorButton("Spawn Body")]
 		[Tooltip("A test button to trigger spawning prefabs from the inspector")]
         public bool SpawnBodyButton;
-
         
 		protected TopDownController _controller;
 		protected Health _health;
@@ -112,8 +111,8 @@ namespace MoreMountains.TopDownEngine
                 if(deadBodyManager.deadBodies.Count > deadBodyManager.bodyCountCap)
                 {
                     GameObject body = deadBodyManager.deadBodies.ElementAt(0);
-                    
-                    Destroy(body);
+
+                    body.GetComponent<BodyExplosion>().Explode();
                     deadBodyManager.deadBodies.RemoveAt(0);
                 }
             }
