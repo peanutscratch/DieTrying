@@ -56,7 +56,7 @@ namespace MoreMountains.TopDownEngine
 
 			if (aliveCharacters <= 1)
 			{
-				StartCoroutine(GameOver());
+				StartCoroutine(GameOver()); //TODO Change to whatever restart does
 			}
 		}
 

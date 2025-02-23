@@ -397,7 +397,12 @@ namespace MoreMountains.TopDownEngine
 		{
 			yield return new WaitForSeconds(DelayBeforeDeathScreen);
 
-			GUIManager.Instance.SetDeathScreen(true);
+			if (CurrentCheckpoint != null)
+			{
+				CurrentCheckpoint.SpawnPlayer(Players[0]);
+			}
+			
+			//GUIManager.Instance.SetDeathScreen(true);
 		}
 
 		/// <summary>
@@ -428,12 +433,12 @@ namespace MoreMountains.TopDownEngine
 				// we lose a life
 				GameManager.Instance.LoseLife();
 				// if we're out of lives, we check if we have an exit scene, and move there
+				
 				if (GameManager.Instance.CurrentLives <= 0)
 				{
-					TopDownEngineEvent.Trigger(TopDownEngineEventTypes.GameOver, null);
-					if ((GameManager.Instance.GameOverScene != null) && (GameManager.Instance.GameOverScene != ""))
+					if (CurrentCheckpoint != null)
 					{
-						MMSceneLoadingManager.LoadScene(GameManager.Instance.GameOverScene);
+						CurrentCheckpoint.SpawnPlayer(Players[0]);
 					}
 				}
 			}

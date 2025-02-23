@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,5 +18,11 @@ public class BodyExplosion : MonoBehaviour
     public void ExplosionHit()
     {
         //do the hit
+    }
+
+    private void Update()
+    {
+        if (!gameObject.activeSelf)
+            gameObject.SetActive(true);
     }
 }
