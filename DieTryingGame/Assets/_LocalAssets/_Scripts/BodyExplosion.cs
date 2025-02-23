@@ -7,8 +7,8 @@ using DG.Tweening; //DOTween Library
 public class BodyExplosion : MonoBehaviour
 {
     public Animator animator;
-    public string animState;
-    public float delayTimer = 1.0f;
+    public AudioSource ArmSound;
+    public AudioSource ExplodeSound;
 
     public void Explode()
     {
