@@ -111,9 +111,11 @@ namespace MoreMountains.TopDownEngine
                 if(deadBodyManager.deadBodies.Count > deadBodyManager.bodyCountCap)
                 {
                     GameObject body = deadBodyManager.deadBodies.ElementAt(0);
-
-                    body.GetComponent<BodyExplosion>().Explode();
-                    deadBodyManager.deadBodies.RemoveAt(0);
+					if(body!=null)
+                    {
+						body.GetComponent<BodyExplosion>().Explode();
+                    	deadBodyManager.deadBodies.RemoveAt(0);
+					}
                 }
             }
 		}
