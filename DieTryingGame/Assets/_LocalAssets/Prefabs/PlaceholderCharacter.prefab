@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 114704504716019314}
   - component: {fileID: 1735628759589514915}
   - component: {fileID: 7818076643980903327}
-  - component: {fileID: 2233348561440541114}
+  - component: {fileID: 8972243502404652764}
   m_Layer: 10
   m_Name: PlaceholderCharacter
   m_TagString: Player
@@ -98,8 +98,8 @@ MonoBehaviour:
   CharacterDimension: 0
   CharacterType: 0
   PlayerID: Player1
-  CharacterAnimator: {fileID: 0}
-  UseDefaultMecanim: 1
+  CharacterAnimator: {fileID: 8972243502404652764}
+  UseDefaultMecanim: 0
   RunAnimatorSanityChecks: 0
   DisableAnimatorLogs: 1
   CharacterModel: {fileID: 1790328835693532, guid: 1ad7bd0ba7df62842842d1a8d738ba6a,
@@ -180,7 +180,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.038589478, y: -0.0374012}
+  m_Offset: {x: -0.038589478, y: -0.16}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -191,7 +191,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.47772217, y: 0.630703}
+  m_Size: {x: 0.39, y: 0.51}
   m_EdgeRadius: 0
 --- !u!114 &114186989754477336
 MonoBehaviour:
@@ -327,7 +327,7 @@ MonoBehaviour:
   AbilityStopSfx: {fileID: 0}
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
+  AbilityPermitted: 0
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
@@ -387,7 +387,7 @@ MonoBehaviour:
   AbilityStopSfx: {fileID: 0}
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
+  AbilityPermitted: 0
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
@@ -447,7 +447,7 @@ MonoBehaviour:
   AbilityStopSfx: {fileID: 0}
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
+  AbilityPermitted: 0
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
@@ -651,26 +651,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawningBodyFeedback: {fileID: 0}
-  deadBodyManager: {fileID: 2233348561440541114}
+  deadBodyManager: {fileID: 0}
   ObjectsToSpawnOnDeath:
   - {fileID: 722453248576642795, guid: eb808db664294034abaf8cc631c513d3, type: 3}
   ObjectsToDisableOnDeath: []
   MonosToDisableOnDeath: []
   SpawnBodyButton: 0
---- !u!114 &2233348561440541114
-MonoBehaviour:
+--- !u!95 &8972243502404652764
+Animator:
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1790328835693532}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db8b586626b59647a0e82664fcebdf3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deadBodies: []
-  bodyCountCap: 3
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 813ecde46d0ade74b9a183ed872c2379, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1997364199477008
 GameObject:
   m_ObjectHideFlags: 0

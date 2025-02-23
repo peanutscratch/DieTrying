@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DeadBodyManager : MonoBehaviour
@@ -12,13 +13,16 @@ public class DeadBodyManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        foreach (GameObject deadBody in deadBodies)
+        {
+            Destroy(deadBody.gameObject);
+        }
+        deadBodies.Clear();
     }
 
     // Update is called once per frame
     void Update()
     {
         
-        deadBodies.RemoveAll( x => !x);
     }
 }
