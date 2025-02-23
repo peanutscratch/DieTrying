@@ -31,6 +31,11 @@ namespace MoreMountains.TopDownEngine
 		/// whether or not movement input is authorized at that time
 		[Tooltip("whether or not movement input is authorized at that time")]
 		public bool InputAuthorized = true;
+		
+		public Animator CharacterAnimator;
+		
+		public CharacterOrientation2D CharacterOrientation2D;
+		
 		/// whether or not input should be analog
 		[Tooltip("whether or not input should be analog")]
 		public bool AnalogInput = false;
@@ -323,7 +328,14 @@ namespace MoreMountains.TopDownEngine
 			if (_movement.CurrentState == CharacterStates.MovementStates.Walking && _abilityInProgressSfx == null)
 			{
 				PlayAbilityUsedSfx();
+				CharacterAnimator.SetBool("IsWalking", true);
+				if (_horizontalMovement < 0)
+					gameObject.transform.localScale = new Vector3(-1, 1, 1);
+				else if (_horizontalMovement > 0)
+					gameObject.transform.localScale = new Vector3(1, 1, 1);
 			}
+			else
+				CharacterAnimator.SetBool("IsWalking", false);
 
 			// if movement is prevented, or if the character is dead/frozen/can't move, we exit and do nothing
 			if ( !AbilityAuthorized

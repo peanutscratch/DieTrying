@@ -88,7 +88,7 @@ namespace MoreMountains.TopDownEngine
 
 			if (aliveCharacters <= 1)
 			{
-				StartCoroutine(GameOver());
+				//StartCoroutine(GameOver());
 			}
 		}
 
@@ -106,7 +106,7 @@ namespace MoreMountains.TopDownEngine
 			MMTimeScaleEvent.Trigger(MMTimeScaleMethods.For, 0f, 0f, false, 0f, true);
 			_gameOver = true;
 			MMSoundManagerAllSoundsControlEvent.Trigger(MMSoundManagerAllSoundsControlEventTypes.FreeAllLooping);
-			TopDownEngineEvent.Trigger(TopDownEngineEventTypes.GameOver, null);
+			//TopDownEngineEvent.Trigger(TopDownEngineEventTypes.GameOver, null);
 		}
 
 		/// <summary>

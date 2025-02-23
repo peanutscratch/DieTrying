@@ -370,6 +370,8 @@ MonoBehaviour:
   BlockingWeaponStates: 
   Movement: 0
   InputAuthorized: 1
+  CharacterAnimator: {fileID: 0}
+  CharacterOrientation2D: {fileID: 0}
   AnalogInput: 0
   ScriptDrivenInput: 0
   WalkSpeed: 6

@@ -489,7 +489,6 @@ namespace MoreMountains.TopDownEngine
 		protected virtual void Update()
 		{		
 			EveryFrame();
-				
 		}
 
 		/// <summary>
@@ -580,6 +579,7 @@ namespace MoreMountains.TopDownEngine
 				}
 			}
 		}
+		
 		
 		public virtual void RespawnAt(Vector3 spawnPosition, FacingDirections facingDirection)
 		{
