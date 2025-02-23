@@ -10,6 +10,13 @@ public class BodyExplosion : MonoBehaviour
     public AudioSource ArmSound;
     public AudioSource ExplodeSound;
 
+    public Collider2D explosionCircle;
+
+    public void Start()
+    {
+        explosionCircle.enabled = false;
+    }
+
     public void Explode()
     {
         animator.Play("Arm");
