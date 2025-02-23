@@ -1020,9 +1020,6 @@ Transform:
   - {fileID: 1443193650}
   - {fileID: 1346376690}
   - {fileID: 1038334556}
-  - {fileID: 1656518565}
-  - {fileID: 1674359282}
-  - {fileID: 592036071}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &133959408
@@ -2807,17 +2804,17 @@ PrefabInstance:
         type: 3}
       propertyPath: TargetRoom
       value: 
-      objectReference: {fileID: 1459961605}
+      objectReference: {fileID: 0}
     - target: {fileID: 7723852057308353309, guid: e822cf72d31472a489bfe9dae1452b6d,
         type: 3}
       propertyPath: CurrentRoom
       value: 
-      objectReference: {fileID: 1443193652}
+      objectReference: {fileID: 0}
     - target: {fileID: 7723852057308353309, guid: e822cf72d31472a489bfe9dae1452b6d,
         type: 3}
       propertyPath: Destination
       value: 
-      objectReference: {fileID: 1942082001}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4344,17 +4341,17 @@ PrefabInstance:
         type: 3}
       propertyPath: TargetRoom
       value: 
-      objectReference: {fileID: 656096326}
+      objectReference: {fileID: 0}
     - target: {fileID: 7723852057308353309, guid: e822cf72d31472a489bfe9dae1452b6d,
         type: 3}
       propertyPath: CurrentRoom
       value: 
-      objectReference: {fileID: 2006214366}
+      objectReference: {fileID: 0}
     - target: {fileID: 7723852057308353309, guid: e822cf72d31472a489bfe9dae1452b6d,
         type: 3}
       propertyPath: Destination
       value: 
-      objectReference: {fileID: 2040255964}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4882,6 +4879,16 @@ PrefabInstance:
       propertyPath: Destination
       value: 
       objectReference: {fileID: 1926632653}
+    - target: {fileID: 4091269857539011721, guid: fab35f5949f7d4240a9c5dcd368f9055,
+        type: 3}
+      propertyPath: InitialDelay
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091269857539011721, guid: fab35f5949f7d4240a9c5dcd368f9055,
+        type: 3}
+      propertyPath: FreezeCharacter
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6543147187147749221, guid: fab35f5949f7d4240a9c5dcd368f9055,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6371,91 +6378,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 88}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &592036070
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 592036071}
-  - component: {fileID: 592036074}
-  - component: {fileID: 592036073}
-  m_Layer: 0
-  m_Name: Room (10)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &592036071
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 592036070}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 130750842}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &592036073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 592036070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fae51a15a2f3b284e88ab7b9e26296e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Mode: 0
-  VirtualCamera: {fileID: 0}
-  Confiner: {fileID: 0}
-  CinemachineCameraConfiner: {fileID: 0}
-  ResizeConfinerAutomatically: 0
-  AutoDetectFirstRoomOnStart: 0
-  RoomDepth: 100
-  CurrentRoom: 0
-  RoomVisited: 0
-  OnPlayerEntersRoomForTheFirstTime:
-    m_PersistentCalls:
-      m_Calls: []
-  OnPlayerEntersRoom:
-    m_PersistentCalls:
-      m_Calls: []
-  OnPlayerExitsRoom:
-    m_PersistentCalls:
-      m_Calls: []
-  ActivationList: []
---- !u!65 &592036074
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 592036070}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 10}
-  m_Center: {x: 0, y: 0, z: 5}
 --- !u!1 &605729098
 GameObject:
   m_ObjectHideFlags: 0
@@ -8134,6 +8056,16 @@ PrefabInstance:
       propertyPath: Destination
       value: 
       objectReference: {fileID: 756752506}
+    - target: {fileID: 4091269857539011721, guid: fab35f5949f7d4240a9c5dcd368f9055,
+        type: 3}
+      propertyPath: InitialDelay
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091269857539011721, guid: fab35f5949f7d4240a9c5dcd368f9055,
+        type: 3}
+      propertyPath: FreezeCharacter
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6543147187147749221, guid: fab35f5949f7d4240a9c5dcd368f9055,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12126,17 +12058,17 @@ PrefabInstance:
         type: 3}
       propertyPath: TargetRoom
       value: 
-      objectReference: {fileID: 1443193652}
+      objectReference: {fileID: 0}
     - target: {fileID: 7723852057308353309, guid: e822cf72d31472a489bfe9dae1452b6d,
         type: 3}
       propertyPath: CurrentRoom
       value: 
-      objectReference: {fileID: 1346376692}
+      objectReference: {fileID: 0}
     - target: {fileID: 7723852057308353309, guid: e822cf72d31472a489bfe9dae1452b6d,
         type: 3}
       propertyPath: Destination
       value: 
-      objectReference: {fileID: 1463246147}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12577,17 +12509,17 @@ PrefabInstance:
         type: 3}
       propertyPath: TargetRoom
       value: 
-      objectReference: {fileID: 1346376692}
+      objectReference: {fileID: 0}
     - target: {fileID: 7723852057308353309, guid: e822cf72d31472a489bfe9dae1452b6d,
         type: 3}
       propertyPath: CurrentRoom
       value: 
-      objectReference: {fileID: 1038334558}
+      objectReference: {fileID: 0}
     - target: {fileID: 7723852057308353309, guid: e822cf72d31472a489bfe9dae1452b6d,
         type: 3}
       propertyPath: Destination
       value: 
-      objectReference: {fileID: 951877576}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12722,17 +12654,17 @@ PrefabInstance:
         type: 3}
       propertyPath: TargetRoom
       value: 
-      objectReference: {fileID: 2006214366}
+      objectReference: {fileID: 0}
     - target: {fileID: 7723852057308353309, guid: e822cf72d31472a489bfe9dae1452b6d,
         type: 3}
       propertyPath: CurrentRoom
       value: 
-      objectReference: {fileID: 1459961605}
+      objectReference: {fileID: 0}
     - target: {fileID: 7723852057308353309, guid: e822cf72d31472a489bfe9dae1452b6d,
         type: 3}
       propertyPath: Destination
       value: 
-      objectReference: {fileID: 1419604592}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14118,18 +14050,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1958150507955449025}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1340473728 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4091269857539011721, guid: fab35f5949f7d4240a9c5dcd368f9055,
-    type: 3}
-  m_PrefabInstance: {fileID: 1958150507955449025}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d67c8b1f0cc0f1c46901ec3b398875b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1346376689
 GameObject:
   m_ObjectHideFlags: 0
@@ -15981,6 +15901,16 @@ PrefabInstance:
       propertyPath: Destination
       value: 
       objectReference: {fileID: 1126443629}
+    - target: {fileID: 4091269857539011721, guid: fab35f5949f7d4240a9c5dcd368f9055,
+        type: 3}
+      propertyPath: InitialDelay
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091269857539011721, guid: fab35f5949f7d4240a9c5dcd368f9055,
+        type: 3}
+      propertyPath: FreezeCharacter
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6543147187147749221, guid: fab35f5949f7d4240a9c5dcd368f9055,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16053,18 +15983,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1463246145}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1463246147 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4091269857539011721, guid: fab35f5949f7d4240a9c5dcd368f9055,
-    type: 3}
-  m_PrefabInstance: {fileID: 1463246145}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d67c8b1f0cc0f1c46901ec3b398875b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1464799916
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16533,7 +16451,7 @@ MonoBehaviour:
   VirtualCamera: {fileID: 1575553206}
   Confiner: {fileID: 1617541025}
   CinemachineCameraConfiner: {fileID: 1575553205}
-  ResizeConfinerAutomatically: 0
+  ResizeConfinerAutomatically: 1
   AutoDetectFirstRoomOnStart: 1
   RoomDepth: 100
   CurrentRoom: 0
@@ -21065,6 +20983,16 @@ PrefabInstance:
       propertyPath: Destination
       value: 
       objectReference: {fileID: 1182082437}
+    - target: {fileID: 4091269857539011721, guid: fab35f5949f7d4240a9c5dcd368f9055,
+        type: 3}
+      propertyPath: InitialDelay
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091269857539011721, guid: fab35f5949f7d4240a9c5dcd368f9055,
+        type: 3}
+      propertyPath: FreezeCharacter
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6543147187147749221, guid: fab35f5949f7d4240a9c5dcd368f9055,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21419,7 +21347,7 @@ Transform:
   m_GameObject: {fileID: 1598629386}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.026624, y: 0.8300549, z: -6.430874}
+  m_LocalPosition: {x: 10.020923, y: 0.8300549, z: -6.430874}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21675,7 +21603,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -21761,91 +21689,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1643976383}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1656518564
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1656518565}
-  - component: {fileID: 1656518568}
-  - component: {fileID: 1656518567}
-  m_Layer: 0
-  m_Name: Room (8)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1656518565
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1656518564}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 130750842}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1656518567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1656518564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fae51a15a2f3b284e88ab7b9e26296e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Mode: 0
-  VirtualCamera: {fileID: 0}
-  Confiner: {fileID: 0}
-  CinemachineCameraConfiner: {fileID: 0}
-  ResizeConfinerAutomatically: 0
-  AutoDetectFirstRoomOnStart: 0
-  RoomDepth: 100
-  CurrentRoom: 0
-  RoomVisited: 0
-  OnPlayerEntersRoomForTheFirstTime:
-    m_PersistentCalls:
-      m_Calls: []
-  OnPlayerEntersRoom:
-    m_PersistentCalls:
-      m_Calls: []
-  OnPlayerExitsRoom:
-    m_PersistentCalls:
-      m_Calls: []
-  ActivationList: []
---- !u!65 &1656518568
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1656518564}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 10}
-  m_Center: {x: 0, y: 0, z: 5}
 --- !u!1001 &1658414777
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21994,91 +21837,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1664612725}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1674359281
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1674359282}
-  - component: {fileID: 1674359285}
-  - component: {fileID: 1674359284}
-  m_Layer: 0
-  m_Name: Room (9)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1674359282
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1674359281}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 130750842}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1674359284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1674359281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fae51a15a2f3b284e88ab7b9e26296e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Mode: 0
-  VirtualCamera: {fileID: 0}
-  Confiner: {fileID: 0}
-  CinemachineCameraConfiner: {fileID: 0}
-  ResizeConfinerAutomatically: 0
-  AutoDetectFirstRoomOnStart: 0
-  RoomDepth: 100
-  CurrentRoom: 0
-  RoomVisited: 0
-  OnPlayerEntersRoomForTheFirstTime:
-    m_PersistentCalls:
-      m_Calls: []
-  OnPlayerEntersRoom:
-    m_PersistentCalls:
-      m_Calls: []
-  OnPlayerExitsRoom:
-    m_PersistentCalls:
-      m_Calls: []
-  ActivationList: []
---- !u!65 &1674359285
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1674359281}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 10}
-  m_Center: {x: 0, y: 0, z: 5}
 --- !u!1 &1675313208
 GameObject:
   m_ObjectHideFlags: 0
@@ -24290,7 +24048,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 3501563091819723653}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d67c8b1f0cc0f1c46901ec3b398875b9, type: 3}
   m_Name: 
@@ -24667,6 +24425,16 @@ PrefabInstance:
       propertyPath: Destination
       value: 
       objectReference: {fileID: 240198068}
+    - target: {fileID: 4091269857539011721, guid: fab35f5949f7d4240a9c5dcd368f9055,
+        type: 3}
+      propertyPath: InitialDelay
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091269857539011721, guid: fab35f5949f7d4240a9c5dcd368f9055,
+        type: 3}
+      propertyPath: FreezeCharacter
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6543147187147749221, guid: fab35f5949f7d4240a9c5dcd368f9055,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26294,6 +26062,16 @@ PrefabInstance:
       propertyPath: Destination
       value: 
       objectReference: {fileID: 1180318752}
+    - target: {fileID: 4091269857539011721, guid: fab35f5949f7d4240a9c5dcd368f9055,
+        type: 3}
+      propertyPath: InitialDelay
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091269857539011721, guid: fab35f5949f7d4240a9c5dcd368f9055,
+        type: 3}
+      propertyPath: FreezeCharacter
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6543147187147749221, guid: fab35f5949f7d4240a9c5dcd368f9055,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32532,17 +32310,17 @@ PrefabInstance:
         type: 3}
       propertyPath: TargetRoom
       value: 
-      objectReference: {fileID: 1518002045}
+      objectReference: {fileID: 0}
     - target: {fileID: 7723852057308353309, guid: e822cf72d31472a489bfe9dae1452b6d,
         type: 3}
       propertyPath: CurrentRoom
       value: 
-      objectReference: {fileID: 656096326}
+      objectReference: {fileID: 0}
     - target: {fileID: 7723852057308353309, guid: e822cf72d31472a489bfe9dae1452b6d,
         type: 3}
       propertyPath: Destination
       value: 
-      objectReference: {fileID: 1340473728}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32863,6 +32641,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4091269857539011721, guid: fab35f5949f7d4240a9c5dcd368f9055,
         type: 3}
+      propertyPath: Activable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091269857539011721, guid: fab35f5949f7d4240a9c5dcd368f9055,
+        type: 3}
       propertyPath: TargetRoom
       value: 
       objectReference: {fileID: 656096326}
@@ -32876,6 +32659,26 @@ PrefabInstance:
       propertyPath: Destination
       value: 
       objectReference: {fileID: 2103540226}
+    - target: {fileID: 4091269857539011721, guid: fab35f5949f7d4240a9c5dcd368f9055,
+        type: 3}
+      propertyPath: InitialDelay
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091269857539011721, guid: fab35f5949f7d4240a9c5dcd368f9055,
+        type: 3}
+      propertyPath: AutoActivation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091269857539011721, guid: fab35f5949f7d4240a9c5dcd368f9055,
+        type: 3}
+      propertyPath: FreezeCharacter
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091269857539011721, guid: fab35f5949f7d4240a9c5dcd368f9055,
+        type: 3}
+      propertyPath: ButtonActivatedRequirement
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6543147187147749221, guid: fab35f5949f7d4240a9c5dcd368f9055,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33008,18 +32811,18 @@ PrefabInstance:
     - target: {fileID: 7723852057308353309, guid: e822cf72d31472a489bfe9dae1452b6d,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7723852057308353309, guid: e822cf72d31472a489bfe9dae1452b6d,
         type: 3}
       propertyPath: TargetRoom
       value: 
-      objectReference: {fileID: 1518002045}
+      objectReference: {fileID: 0}
     - target: {fileID: 7723852057308353309, guid: e822cf72d31472a489bfe9dae1452b6d,
         type: 3}
       propertyPath: CurrentRoom
       value: 
-      objectReference: {fileID: 1518002045}
+      objectReference: {fileID: 0}
     - target: {fileID: 7723852057308353309, guid: e822cf72d31472a489bfe9dae1452b6d,
         type: 3}
       propertyPath: Destination
