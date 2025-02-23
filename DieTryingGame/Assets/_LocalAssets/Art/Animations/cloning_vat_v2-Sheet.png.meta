@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 344bb07cfbb174f4297390a9ad8879c0
+guid: 494c4b6941d77064cbcb1be56990a2fb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spawn_animation_v2-Sheet_0
+      name: cloning_vat_v2-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbfe12f637d839e41b35b5c4ed678f5c
-      internalID: 2076390295
+      spriteID: e47675afb9f614d46acd068a196775fd
+      internalID: 453374706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spawn_animation_v2-Sheet_1
+      name: cloning_vat_v2-Sheet_1
       rect:
         serializedVersion: 2
         x: 16
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 927c7a881b55a3147a789cbd78e50e62
-      internalID: -1503799856
+      spriteID: 9d9adeb7950402748b5b8f4775bb429a
+      internalID: -1484048429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spawn_animation_v2-Sheet_2
+      name: cloning_vat_v2-Sheet_2
       rect:
         serializedVersion: 2
         x: 32
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b83ba92f1a1513e42ae9c3985959c899
-      internalID: -450749455
+      spriteID: 482dfdd19b3457c4383d4262935123f8
+      internalID: 536457371
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spawn_animation_v2-Sheet_3
+      name: cloning_vat_v2-Sheet_3
       rect:
         serializedVersion: 2
         x: 48
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35915ffbcb919234588b1535cb88a8f1
-      internalID: 781197246
+      spriteID: 2ba6b565761cc664b8c53cc7180524c0
+      internalID: 633045275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spawn_animation_v2-Sheet_4
+      name: cloning_vat_v2-Sheet_4
       rect:
         serializedVersion: 2
         x: 64
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0bf3cb5e94255a40a9105538ef04c46
-      internalID: 104301613
+      spriteID: 7734234df7d6cf94e8954134a74dda4d
+      internalID: 1649096600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spawn_animation_v2-Sheet_5
+      name: cloning_vat_v2-Sheet_5
       rect:
         serializedVersion: 2
         x: 80
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f45d455b65673f4c81e0a0d75069af0
-      internalID: -176238086
+      spriteID: 8df024655eb1a8d40addab3f480f614b
+      internalID: -1087663743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spawn_animation_v2-Sheet_6
+      name: cloning_vat_v2-Sheet_6
       rect:
         serializedVersion: 2
         x: 96
@@ -250,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03812278f6c6cee4c98015b76a8e1953
-      internalID: -881902747
+      spriteID: 15b020f320b18d1409179bf40b22fbb1
+      internalID: -1786497513
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spawn_animation_v2-Sheet_7
+      name: cloning_vat_v2-Sheet_7
       rect:
         serializedVersion: 2
         x: 112
@@ -271,134 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 620d5055ef1731b468ff1d16845a161f
-      internalID: -1815156714
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spawn_animation_v2-Sheet_8
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1b8b73419a50568468b18b1b961f61ad
-      internalID: -2005014733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spawn_animation_v2-Sheet_9
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 0
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a69e0baab81dc142b786d45e0d6131e
-      internalID: 1143682798
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spawn_animation_v2-Sheet_10
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd88b8ba1b130a74dab97c7a50549547
-      internalID: 447150062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spawn_animation_v2-Sheet_11
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 0
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d3bc0e4903cbf8e44a95221f5ffe1604
-      internalID: 702376840
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spawn_animation_v2-Sheet_12
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56f4137aac41e4f49b09d79aea2e5f6d
-      internalID: 683129840
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spawn_animation_v2-Sheet_13
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 0
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa6b25ea3fa80d645aac1d900de68a5c
-      internalID: -1926072824
+      spriteID: e1c54dfb370fc774f9ea9e7e1c4bbd86
+      internalID: -1269336745
       vertices: []
       indices: 
       edges: []
@@ -414,20 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      spawn_animation_v2-Sheet_0: 2076390295
-      spawn_animation_v2-Sheet_1: -1503799856
-      spawn_animation_v2-Sheet_10: 447150062
-      spawn_animation_v2-Sheet_11: 702376840
-      spawn_animation_v2-Sheet_12: 683129840
-      spawn_animation_v2-Sheet_13: -1926072824
-      spawn_animation_v2-Sheet_2: -450749455
-      spawn_animation_v2-Sheet_3: 781197246
-      spawn_animation_v2-Sheet_4: 104301613
-      spawn_animation_v2-Sheet_5: -176238086
-      spawn_animation_v2-Sheet_6: -881902747
-      spawn_animation_v2-Sheet_7: -1815156714
-      spawn_animation_v2-Sheet_8: -2005014733
-      spawn_animation_v2-Sheet_9: 1143682798
+      cloning_vat_v2-Sheet_0: 453374706
+      cloning_vat_v2-Sheet_1: -1484048429
+      cloning_vat_v2-Sheet_2: 536457371
+      cloning_vat_v2-Sheet_3: 633045275
+      cloning_vat_v2-Sheet_4: 1649096600
+      cloning_vat_v2-Sheet_5: -1087663743
+      cloning_vat_v2-Sheet_6: -1786497513
+      cloning_vat_v2-Sheet_7: -1269336745
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
